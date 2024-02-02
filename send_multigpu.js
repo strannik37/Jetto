@@ -255,7 +255,7 @@ function main() {
                 }
             }));
             if (!mined) {
-                console.log(`${formatTime()}: not mined`, seed.toString(16).slice(0, 4), i++, success, Math.floor((Date.now() - start) / 1000));
+                //console.log(`${formatTime()}: not mined`, seed.toString(16).slice(0, 4), i++, success, Math.floor((Date.now() - start) / 1000));
             }
             if (mined) {
                 const [newSeed] = yield getPowInfo(liteClient, core_1.Address.parse(giverAddress));
